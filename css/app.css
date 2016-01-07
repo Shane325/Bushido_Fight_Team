@@ -1,6 +1,7 @@
 nav.primary{
 display: table;
 margin: 0 auto;
+background: #b3b3b3;
  }
 nav.primary ul,
 nav.primary ul li {
@@ -31,6 +32,6 @@ text-decoration: none;
 }
 
 nav.primary ul li a:hover {
-background: #b3b3b3;
+background-color: white;
 /*cursor: pointer;*/
 }
