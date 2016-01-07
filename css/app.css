@@ -28,13 +28,6 @@ color: black;
 text-transform: uppercase;
 text-decoration: none;
 /*font-weight: bold;*/
-letter-spacing: 0.08em;
-background: ##999999;
-    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-line-height: 1.6;
-font-weight: 400;
-font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-color: #222;
 }
 
 nav.primary ul li a:hover {
