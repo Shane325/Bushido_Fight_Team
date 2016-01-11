@@ -35,3 +35,21 @@ nav.primary ul li a:hover {
 background-color: white;
 /*cursor: pointer;*/
 }
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.schedule {
+  background-image: url('../images/jimmy_kurt.jpg');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
