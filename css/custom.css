@@ -1,5 +1,5 @@
 nav.primary{
-display: table;
+/*display: table;*/
 margin: 0 auto;
 /*background: #b3b3b3;*/
  }
@@ -25,14 +25,14 @@ nav.primary ul li a {
 display: inline-block;
 line-height: 49px;
 padding:  0 14px;
-color: black;
+color: white;
 text-transform: uppercase;
 text-decoration: none;
 /*font-weight: bold;*/
 }
 
 nav.primary ul li a:hover {
-background-color: white;
+/*background-color: white;*/
 /*cursor: pointer;*/
 }
 
@@ -51,7 +51,7 @@ background-color: white;
 .schedule {
 /*  background-image: url('../images/footer_lodyas.png');*/
   background-size: cover;
-  color: #fff;
+/*  color: #fff;*/
   padding-bottom: 5rem;
 }
 .fixed-nav-bar {
@@ -63,4 +63,12 @@ background-color: white;
   height: 50px;
   background-image: url('../images/footer_lodyas.png');
 /*  background-color: #00a087;*/
+}
+.logo {
+  position: relative;
+}
+.logo {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
 }
