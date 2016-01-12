@@ -1,7 +1,7 @@
 nav.primary{
 display: table;
 margin: 0 auto;
-background: #b3b3b3;
+/*background: #b3b3b3;*/
  }
 nav.primary ul,
 nav.primary ul li {
@@ -47,9 +47,20 @@ background-color: white;
   margin-bottom: 1.2rem;
 }
 
+
 .schedule {
-  background-image: url('../images/jimmy_kurt.jpg');
+/*  background-image: url('../images/footer_lodyas.png');*/
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-image: url('../images/footer_lodyas.png');
+/*  background-color: #00a087;*/
 }
