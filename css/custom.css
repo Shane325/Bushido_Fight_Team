@@ -75,10 +75,10 @@ nav.primary ul li a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*body { background: #200; }*/
 #slidy-container { 
-  width: 300%; margin: 0 auto; overflow: hidden;
+  width: 600%; margin: 0 auto; overflow: hidden;
 }
 .slider {
   position: relative;
-  max-width: 80%;
+  max-width: 150%;
   margin: 3rem auto -12rem; 
 }
