@@ -33,21 +33,6 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <!--Navigation-->
-<!--
-<div class="band navigation">
-    <nav class="container primary">
-        <div class="sixteen columns">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#academy">Academy</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
--->
-
 <nav class="fixed-nav-bar">
     <nav class="container primary">
         <ul>
@@ -58,8 +43,7 @@
         </ul>
     </nav>
 </nav>
-    
-    
+ 
 <div class="section home" id="home">
     <div class="container">
         <div class="row">
@@ -81,7 +65,17 @@
             <div class="one-half column" style="margin-top: 25%">
                 <h4>Schedule</h4>
                 <p>Check out our class schedule</p>
-          </div>
+            </div>
+            <div class="one-half column slider">
+                <div id="slidy-container">
+                  <figure id="slidy">
+                    <img src="/images/bushido_1.jpg" alt="" data-caption="Bushido Fight Team">
+                     <img src="/images/bushido_2.jpg" alt="" data-caption="Kurt Osiander BJJ" >
+                     <img src="/images/bushido_3.jpg" alt="" data-caption="Team Jaurquin">
+                     <img src="/images/bushido_4.jpg" alt="" data-caption="Ralph Gracie BJJ">
+                  </figure>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -107,6 +101,11 @@
         </div>
     </div>
 </div>
+    
+<!-- Javascript
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="slidy.js"></script>
+<script>cssSlidy();</script>    
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
