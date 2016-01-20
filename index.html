@@ -35,26 +35,31 @@
 <!--Navigation-->
 <nav class="fixed-nav-bar">
     <nav class="container primary">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#academy">Academy</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="row">
+            <div class="one-half column">
+                <img class="logo" src="images/bushido_logo.jpg">
+            </div>
+            <div class="one-half column">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#academy">Academy</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </nav>
  
 <div class="section home" id="home">
     <div class="container">
         <div class="row">
-          <div class="one-half column" style="margin-top: 25%">
+          <div class="one-half column" style="margin-top: 25%;">
             <h4>Bushido Fight Team</h4>
               <h6>Strength, Honor & Discipline: The Way of the Warrior</h6>
               <p>Specializing in Brazilian Jiu-Jitsu and Muay Thai</p>
           </div>
-          <div class="one-half column logos">
-                <img class="logo" src="images/bushido_logo.jpg">
-          </div>
+          
         </div>
     </div>
 </div>
@@ -67,6 +72,7 @@
                 <p>Check out our class schedule</p>
             </div>
             <div class="one-half column slider">
+<!--
                 <div id="slidy-container">
                   <figure id="slidy">
                     <img src="/images/bushido_1.jpg" alt="" data-caption="Bushido Fight Team">
@@ -75,6 +81,83 @@
                      <img src="/images/bushido_4.jpg" alt="" data-caption="Ralph Gracie BJJ">
                   </figure>
                 </div>
+-->
+                <ul class="slides">
+                    <input type="radio" name="radio-btn" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="/images/bushido_1.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-6" class="prev">&#x2039;</label>
+                            <label for="img-2" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <img src="/images/bushido_2.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-1" class="prev">&#x2039;</label>
+                            <label for="img-3" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <img src="/images/bushido_3.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-2" class="prev">&#x2039;</label>
+                            <label for="img-4" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-4" />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <img src="/images/bushido_4.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-3" class="prev">&#x2039;</label>
+                            <label for="img-5" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-5" />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <img src="/images/bushido_5.JPG" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-4" class="prev">&#x2039;</label>
+                            <label for="img-6" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-6" />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <img src="/images/bushido_2.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-5" class="prev">&#x2039;</label>
+                            <label for="img-1" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <li class="nav-dots">
+                      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
