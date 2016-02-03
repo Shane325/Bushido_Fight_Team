@@ -20,8 +20,8 @@
 
 .slides {
     padding: 0;
-    width: 609px;
-    height: 420px;
+    width: 500px;
+    height: 350px;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -43,8 +43,8 @@
 .slide {
     top: 0;
     opacity: 0;
-    width: 609px;
-    height: 420px;
+    width: 500px;
+    height: 350px;
     display: block;
     position: absolute;
 
@@ -59,7 +59,7 @@
 }
 
 .nav label {
-    width: 200px;
+    width: 150px;
     height: 100%;
     display: none;
     position: absolute;
@@ -126,5 +126,6 @@ input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
-	background: rgba(0, 0, 0, 0.8);
+/*	background: rgba(0, 0, 0, 0.8);*/
+    background: white;
 }
