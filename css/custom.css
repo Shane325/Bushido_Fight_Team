@@ -51,22 +51,38 @@ nav.primary ul li a:hover {
 /*cursor: pointer;*/
 }
 .logo {
+/*
   position: relative;
   max-width: 80%;
   margin: 3rem auto -12rem;
   height: 20rem;
   width: 20rem;
   top:-30px;
+*/
+  height: 20rem;
+  width: 20rem;
+  display: block;
+  margin: auto;
 }
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #A0A6A8;
+.upper {
+    padding-top: 10rem;
+    text-align: center;
 }
-.summary{
-    margin-top:50px;
+.section {
+    height: 600px;
+}
+.first {
+ 
+}
+.second {
+  background-image: url('/images/bushido_002.jpg');
+  background-size: cover;
+}
+.third {
+    
+}
+.fourth {
+  background-color: #14C475;
 }
 
 
