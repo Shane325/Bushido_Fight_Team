@@ -59,14 +59,24 @@ nav.primary ul li a:hover {
   width: 20rem;
   top:-30px;
 */
-  height: 20rem;
-  width: 20rem;
+  height: 30rem;
+  width: 30rem;
+  display: block;
+  margin: auto;
+}
+.intro-img {
+  height: 30rem;
+  width: 30rem;
   display: block;
   margin: auto;
 }
 .upper {
     padding-top: 10rem;
     text-align: center;
+}
+.intro {
+    padding-top:3rem;
+    text-align:center;
 }
 .section {
     height: 600px;
@@ -75,7 +85,7 @@ nav.primary ul li a:hover {
  
 }
 .second {
-  background-image: url('/images/bushido_002.jpg');
+  background-image: url('/images/jiujitsu_back.jpg');
   background-size: cover;
 }
 .third {
