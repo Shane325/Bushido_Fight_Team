@@ -33,27 +33,52 @@
 <nav class="fixed-nav-bar">
     <nav class="container primary">
         <div class="row">
-            <div class="one-half column">
-                <img class="logo" src="images/bushido.png">
-            </div>
-            <div class="one-half column">
+            <div class="twelve columns">
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/schedule.html">Schedule</a></li>
-                    <li><a href="/academy.html">Academy</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/index.html" class="button button-primary">Home</a></li>
+                    <li><a href="/academy.html" class="button button-primary">Academy</a></li>
+                    <li><a href="/schedule.html" class="button button-primary">Schedule</a></li>
+                    <li><a href="/contact.html" class="button button-primary">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-</nav> 
-<div class="container">
+</nav>
+    
+<div class="section contact-header">
     <div class="row">
-      <div class="one-half column summary">
         <h4>Contact Us</h4>
-          <p>Feel free to reach out and contact us</p>
-      </div>
+        <p>Feel free to reach out and contact us</p>
     </div>
+</div>
+<div class="section contact-body">
+    <div class="container">
+    <form>
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Admiration</option>
+        <option value="Option 3">Can I get your number?</option>
+      </select>
+    </div>
+  </div>
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Bushido Fight Team …" id="exampleMessage"></textarea>
+<!--
+  <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+-->
+  <input class="button-primary" type="submit" value="Submit">
+</form>
+        </div>
 </div>
 </body>
 </html>
