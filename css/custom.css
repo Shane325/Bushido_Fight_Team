@@ -11,25 +11,17 @@ margin: 0 auto;
   width: 100%;
   height: 200px;
 /*  background-image: url('../images/footer_lodyas.png');*/
-  background-color: #A0A6A8;
+/*  background-color: #A0A6A8;*/
 }
 nav.primary ul,
 nav.primary ul li {
     margin: 0 auto;
     float:none; 
     position:relative; 
-    top:75px; 
-    left:-120px;
-    width:500px;
+/*    top:75px; */
+/*    left:-120px;*/
+    width:50rem;
 }
-
-nav.primary select {
-display: none;
-width:  100%;
-height: 28px;
-margin: 21px 0;
-}
-
 nav.primary ul li {
 display: inline;
 /*float: left;*/
@@ -40,7 +32,7 @@ nav.primary ul li a {
 display: inline-block;
 line-height: 49px;
 padding:  0 14px;
-color: white;
+/*color: white;*/
 text-transform: uppercase;
 text-decoration: none;
 /*font-weight: bold;*/
@@ -65,7 +57,7 @@ nav.primary ul li a:hover {
   margin: auto;
 }
 .intro-img {
-  height: 30rem;
+  height: 27rem;
   width: 30rem;
   display: block;
   margin: auto;
@@ -85,15 +77,59 @@ nav.primary ul li a:hover {
  
 }
 .second {
-  background-image: url('/images/jiujitsu_back.jpg');
+  background-image: url('/images/bushido_001.jpg');
   background-size: cover;
 }
 .third {
     
 }
-.fourth {
-  background-color: #14C475;
+.footer {
+  height: 15rem;
 }
-
+.down-arrow {
+  padding-top: 3rem;
+  height: 3rem;
+  width: 3rem;
+}
+.academy-table {
+    width: 10rem;
+    margin: auto;
+    border-collapse: collapse;
+}
+.academy-img {
+    height:22rem;
+    width:25rem;
+}
+.academy-header {
+    margin-top: 5rem;
+    height: 15rem;
+    text-align: center;
+}
+.academy-academy {
+    text-align: center;
+}
+.academy-jimmy h5 {
+    width:20rem;
+    margin:auto;
+}
+.academy-jimmy {
+    text-align: center;
+}
+.jimmy-img {
+    height: 27rem;
+    width: 30rem;
+}
+.team-img {
+    height: 35rem;
+    width: 50rem;
+}
+.academy-team {
+    text-align: center;
+}
+.schedule-header {
+    margin-top: 5rem;
+    height: 15rem;
+    text-align: center;
+}
 
 
