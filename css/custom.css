@@ -70,7 +70,6 @@ nav.primary ul li {
 .academy-table {
     width: 10rem;
     margin: auto;
-    border-collapse: collapse;
 }
 .academy-img {
     height:22rem;
@@ -85,6 +84,25 @@ nav.primary ul li {
     text-align: center;
     height: auto;
 }
+#academy-dojo-img-1 {
+    position: relative;
+    left: 9rem;
+}
+#academy-dojo-img-2 {
+    position: relative;
+    left: 3rem;
+}
+#academy-dojo-img-3 {
+    position: relative;
+    right: 3rem;
+}
+#academy-dojo-img-4 {
+    position: relative;
+    right: 9rem;
+}
+#academy-dojo-img-row {
+    margin-top: 1rem;
+}
 .academy-jimmy h5 {
     width:20rem;
     margin:auto;
@@ -94,9 +112,29 @@ nav.primary ul li {
     height: auto;
     padding-top: 3rem;
 }
+.academy-jimmy-img {
+    padding-top: 3rem;
+}
 .jimmy-img {
-    height: 27rem;
-    width: 30rem;
+    height: 22rem;
+    width: 25rem;
+    margin: auto;
+}
+#academy-jimmy-img-1 {
+    position: relative;
+    left: 7rem;
+}
+#academy-jimmy-img-2 {
+    position: relative;
+    left: 2rem;
+}
+#academy-jimmy-img-3 {
+    position: relative;
+    right: 2rem;
+}
+#academy-jimmy-img-4 {
+    position: relative;
+    right: 7rem;
 }
 .team-img {
     height: 35rem;
@@ -106,6 +144,17 @@ nav.primary ul li {
     text-align: center;
     height: auto;
     padding-top: 3rem;
+}
+#academy-team-img-1 {
+    position: relative;
+    left: 7rem;
+}
+#academy-team-img-2 {
+    position: relative;
+    right: 7rem;
+}
+#academy-dojo-img-row {
+    margin-top: 2rem;
 }
 .schedule-header {
     margin-top: 5rem;
@@ -119,6 +168,7 @@ nav.primary ul li {
 }
 .footer {
     text-align: center;
+    margin-top: 10rem;
 }
 .copyright {
     margin-top: 2rem;
