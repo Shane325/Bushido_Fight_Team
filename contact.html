@@ -53,57 +53,32 @@
     
 <div class="section contact-body">
     <div class="container">
-        <?php
-$action=$_REQUEST['action'];
-if ($action=="")    /* display the contact form */
-    {
-    ?>
-<form action="" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="action" value="submit">
-    <div class="row">
-        <div class="six columns">
-            <label for="exampleName">Your Name</label>
-            <input class="u-full-width" type="text" placeholder="your full name" id="exampleName" name="name">
-        </div>
-    </div>
-    <div class="row">
-        <div class="six columns">
-          <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="email@mailbox.com" id="exampleEmailInput" name="email">
-        </div>
-        <div class="six columns">
-          <label for="exampleRecipientInput">Reason for contacting</label>
-          <select class="u-full-width" id="exampleRecipientInput">
-            <option value="Option 1">Question</option>
-            <option value="Option 2">Class Schedule</option>
-            <option value="Option 3">Membership</option>
-            <option value="Option 4">Other</option>
-          </select>
-        </div>
-    </div>
-    <label for="exampleMessage">Message</label>
-    <textarea class="u-full-width" placeholder="Hi Bushido Fight Team …" id="exampleMessage" name="message"></textarea>
-    <input class="button-primary" type="submit" value="Submit">
-</form>
-    <?php
-    } 
-else                /* send the submitted data */
-    {
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
-        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-        }
-    else{        
-        $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-        mail("shane325@gmail.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }  
-?>
+        <form name="contactform" method="post" action="send_form_email.php">
+            <div class="row">
+                <div class="six columns">
+                    <label for="exampleName">Your Name</label>
+                    <input class="u-full-width" type="text" placeholder="your full name" id="exampleName" name="name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                  <label for="exampleEmailInput">Your email</label>
+                  <input class="u-full-width" type="email" placeholder="email@mailbox.com" id="exampleEmailInput" name="email">
+                </div>
+                <div class="six columns">
+                  <label for="exampleRecipientInput">Reason for contacting</label>
+                  <select class="u-full-width" id="exampleRecipientInput">
+                    <option value="Option 1">Question</option>
+                    <option value="Option 2">Class Schedule</option>
+                    <option value="Option 3">Membership</option>
+                    <option value="Option 4">Other</option>
+                  </select>
+                </div>
+            </div>
+            <label for="exampleMessage">Message</label>
+            <textarea name="message" class="u-full-width" placeholder="Hi Bushido Fight Team …" id="exampleMessage"></textarea>
+            <input class="button-primary" type="submit" value="Submit">
+        </form>
     </div>
 </div>
     
