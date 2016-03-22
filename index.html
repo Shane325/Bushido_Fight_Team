@@ -26,6 +26,10 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- Font Awesome Icons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -88,6 +92,19 @@
         </div>
 </div>
 
+<div class=" section map">
+    <div class="six columns">
+        <div id="map-address">
+            <i class="fa fa-street-view"></i>   
+                                        &nbsp;  2051 Balboa St. San Francisco, CA             94121</br></br>
+            <i class="fa fa-envelope-o"></i>&nbsp;  Bushidoft@gmail.com</br></br>
+            <i class="fa fa-mobile-phone"></i>&nbsp; &nbsp;  (415)-730-6328</br>
+        </div>
+    </div>
+    <div class="six columns">
+        <div id="map"></div>
+    </div>
+</div>
 <div class="section footer">
     <div class="container">
         <div class="row">
@@ -100,5 +117,21 @@
         </div>
     </div>
 </div>
+
+<!-- CREATE AND CONFIGURE GOOGLE MAP
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 37.776461, lng: -122.481095},
+            zoom: 14
+        });
+        
+    }
+</script>    
+<!-- LOAD GOOGLE MAPS API
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </body>
 </html>

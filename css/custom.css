@@ -174,5 +174,27 @@ nav.primary ul li {
     margin-top: 2rem;
     font-size: 10pt;
 }
+#map-address {
+    position: relative;
+    margin-top: 20rem;
+    width: 32rem;
+    left: 20rem;
+    text-align: left;
+}
+#map {
+    width: 60rem;
+    height: 30rem;
+    position: relative;
+    right: 5rem;
+    margin-top: 15rem;
+/*    border: 1px solid red;*/
+}
+.map {
+/*
+    background-image: url('/images/bushido_010.jpg');
+    background-size: cover;
+*/
+}
+
 
 
