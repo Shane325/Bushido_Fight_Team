@@ -55,12 +55,14 @@ nav.primary ul li {
     height: 600px;
 }
 .second {
-    background-image: url('/images/bushido_001.jpg');
+    background-image: url('/images/bushido_010.jpg');
     background-size: cover;
 }
 .footer {
+    text-align: center;
     height: 15rem;
     padding-top: 3rem;
+/*    color: #7C7A7A;*/
 }
 .down-arrow {
     padding-top: 3rem;
@@ -166,13 +168,10 @@ nav.primary ul li {
     height: 15rem;
     text-align: center;
 }
-.footer {
-    text-align: center;
-    margin-top: 10rem;
-}
 .copyright {
     margin-top: 2rem;
     font-size: 10pt;
+/*    color: #FBFEF9;*/
 }
 #map-address {
     position: relative;
@@ -194,6 +193,8 @@ nav.primary ul li {
     background-image: url('/images/bushido_010.jpg');
     background-size: cover;
 */
+    
+/*    background-color: red;*/
 }
 
 
