@@ -2,7 +2,7 @@
 
 if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "Shane325@gmail.com;johntracy1985@gmail.com";
+    $email_to = "Shane325@gmail.com";
  
     function died($error) {
             // your error code can go here
@@ -59,12 +59,12 @@ if(isset($_POST['email'])) {
     // create email headers
     $headers = 'From: '.$email_from."\r\n" . 'Reply-To: '.$email_from."\r\n" . 'X-Mailer: PHP/' . phpversion();
     
-    if(mail($email_to, $email_subject, $email_message, $headers)){
-        echo 'success';
-    }else{
-        echo 'false';
-    }
-
+//    if(mail($email_to, $email_subject, $email_message, $headers)){
+//        echo 'success';
+//    }else{
+//        echo 'false';
+//    }
+    mail($email_to, $email_subject, $email_message, $headers);
     ?>
     <!-- include your own success html here -->
     Thank you for contacting us. We will be in touch with you very soon.
