@@ -1,8 +1,10 @@
 <?php
+require_once("vendor/phpmailer/phpmailer/PHPMailerAutoload.php"); // this will include smtp and pop files.
 
 if(isset($_POST['email'])) {
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "Shane325@gmail.com";
+    
+    $email_to_first = "bushidoft@gmail.com";
+    $email_to_second = "nicoyamipoya13@gmail.com";
  
     function died($error) {
             // your error code can go here
@@ -12,6 +14,7 @@ if(isset($_POST['email'])) {
             echo "Please go back and fix these errors.<br /><br />";
             die();
     }
+    
     // validation expected data exists
     if(!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
@@ -19,7 +22,7 @@ if(isset($_POST['email'])) {
 
     $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
-    $email_subject = $_POST['subject']; //required
+//    $email_subject = $_POST['subject']; //required
     $comments = $_POST['message']; // required
 
     $error_message = "";
@@ -43,7 +46,7 @@ if(isset($_POST['email'])) {
     died($error_message);
     }
 
-    $email_message = "Form details below.\n\n";
+    $email_message = "You got an email from the Bushido Fight Team website. Here are the details:\n\n";
 
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
@@ -53,21 +56,40 @@ if(isset($_POST['email'])) {
 
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Subject: ".clean_string($email_subject)."\n";
+//    $email_message .= "Subject: ".clean_string($email_subject)."\n";
     $email_message .= "Message: ".clean_string($comments)."\n";
 
-    // create email headers
-    $headers = 'From: '.$email_from."\r\n" . 'Reply-To: '.$email_from."\r\n" . 'X-Mailer: PHP/' . phpversion();
-    
-//    if(mail($email_to, $email_subject, $email_message, $headers)){
-//        echo 'success';
-//    }else{
-//        echo 'false';
+    $mail = new PHPMailer(true);
+
+    //Send mail using gmail
+//    if($send_using_gmail){
+        $mail->IsSMTP(); // telling the class to use SMTP
+        $mail->SMTPAuth = true; // enable SMTP authentication
+        $mail->SMTPSecure = "ssl"; // sets the prefix to the server
+        $mail->Host = "smtp.gmail.com"; // sets GMAIL as the SMTP server
+        $mail->Port = 465; // set the SMTP port for the GMAIL server
+        $mail->Username = "bushidofightteam415@gmail.com"; // GMAIL username
+        $mail->Password = "Bushido2051"; // GMAIL password
 //    }
-    mail($email_to, $email_subject, $email_message, $headers);
+
+    //Typical mail data
+    $mail->AddAddress($email_to_first);
+    $mail->AddAddress($email_to_second);
+    $mail->SetFrom($email_from, $name);
+    $mail->Subject = "Bushido Fight Team message";
+    $mail->Body = $email_message;
+
+    try{
+        $mail->Send();
+        echo "Thank you for contacting us. We will be in touch with you very soon.!";
+    } catch(Exception $e){
+        //Something went bad
+        echo "Fail - " . $mail->ErrorInfo;
+    }
+    
     ?>
     <!-- include your own success html here -->
-    Thank you for contacting us. We will be in touch with you very soon.
+<!--    Thank you for contacting us. We will be in touch with you very soon.-->
 
     <?php
 
