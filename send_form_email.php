@@ -3,8 +3,8 @@ require_once("vendor/phpmailer/phpmailer/PHPMailerAutoload.php"); // this will i
 
 if(isset($_POST['email'])) {
     
-    $email_to_first = "bushidoft@gmail.com";
-    $email_to_second = "nicoyamipoya13@gmail.com";
+    $email_to_first = "shane325@gmail.com";//"bushidoft@gmail.com";
+    $email_to_second = "shane@buildeasyapp.com";//"nicoyamipoya13@gmail.com";
  
     function died($error) {
             // your error code can go here
